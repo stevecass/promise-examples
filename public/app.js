@@ -1,7 +1,8 @@
 function randomNumberService() {
   var deferred = $.get('/some_random_number');
   return deferred
-}
+};
+
 function multiplicationService(a, b) {
   var url = '/mult/' + a + '/' + b;
   var deferred = $.get(url);
@@ -26,7 +27,6 @@ function multiplyRandomNumbers() {
     var product = multiplicationService(values[0], values[1]);
     return product;
   });
-
 }
 
 $(document).ready(function(){
